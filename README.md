@@ -19,6 +19,7 @@ c,addr=s.accept()
 while True:
     clientmessage=c.recv(1024).decode()
     c.send(clientmessage.encode())
+```
 
 SERVER
 ```
@@ -29,6 +30,7 @@ while True:
     msg=input("Client>")
     s.send(msg.encode())
     print("server>",s.recv(1024).decode())
+```
     
 ## OUPUT
 CLIENT OUTPUT
