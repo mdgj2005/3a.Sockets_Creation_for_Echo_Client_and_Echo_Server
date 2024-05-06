@@ -19,6 +19,7 @@ c,addr=s.accept()
 while True:
     clientmessage=c.recv(1024).decode()
     c.send(clientmessage.encode())
+
 SERVER
 ```
 import socket
